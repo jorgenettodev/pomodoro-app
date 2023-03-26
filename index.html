@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro App</title>
+    <link href="./style.css" rel="stylsheet">
+</head>
+<body>
+        <!-- logo-texto do app -->
+        <div class="logo">
+            <h1>Pomodoro App</h1>
+        </div>
+
+        <!-- o timer em si -->
+        <div class="container-timer">
+            <h2 class="timer" id="timer">50:00</h2>
+        </div>
+
+        <!-- botoes do timer -->
+        <div id="timer-btns" class="timer-buttons" >
+            <button id="start-button" class="start">Start</button>
+            <button id="pause-button" class="pause">Pause</button>
+            <button id="reset-button" class="reset">Reset</button>
+        </div>
+
+
+        <!-- menu suspenso: opções de tempo de foco e de pausa -->
+        <div id="timer-settings">
+            <label for="focus-time">Focused time:</label>
+            <select id="focus-time">
+                <option value="25">25 minutes</option>
+                <option value="50">50 minutes</option>
+            </select>
+
+
+            <label for="break-time">Break Time</label>
+            <select id="break-time">
+                <option value="5">5 minutes</option>
+                <option value="10">10 minutes</option>
+            </select>
+            
+
+
+
+
+
+        </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
