@@ -5,5 +5,32 @@
 }
 
 html, body {
-    height: 100%;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0093E9;
+    background-image: url('https://i.pinimg.com/originals/bb/08/e2/bb08e22dc2b427fb63596d364f6cbaf5.gif');
+    opacity: 1.0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+button {
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
