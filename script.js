@@ -6,23 +6,33 @@ let interval;
 
 let buttons = document.querySelectorAll('button');
 
+const btns = () => {
+    buttons.forEach((btn) => {
+        btn.addEventListener('click', (e) => {
 
-buttons.forEach((btn) => {
-    btn.addEventListener('click', (e) => {
-        // Pega o id do elemento clicado
-        if (e.target.id == "start-button") {
-            startTimer();
-            console.log('inicia o timer');
-        } else if (e.target.id == "pause-button") {
-            clearInterval(interval);
-            console.log('pausa o timer');
-        } else if (e.target.id == "reset-button") {
-            clearInterval(interval)
-            display.innerHTML = "50:00"
-            console.log('reseta o timer')
-        }
+
+            
+            if (e.target.id == "start-button") { // Pega o id do elemento clicado;
+                startTimer(); // Inicia a função timer;
+                console.log('inicia o timer'); // Loga o que aconteceu;
+
+
+            } else if (e.target.id == "pause-button") {
+                clearInterval(interval);
+                console.log('pausa o timer');
+
+
+            } else if (e.target.id == "reset-button") {
+                clearInterval(interval)
+                display.innerHTML = "50:00"
+                console.log('reseta o timer')
+                timer = 3000;
+            }
+        })
     })
-})
+}
+
+
 
 const startTimer = () => {
     let minutes;
@@ -44,3 +54,5 @@ const startTimer = () => {
         display.innerHTML = "00:00";
     }
 }
+
+window.onload = btns();
